@@ -13,8 +13,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "动画性能之帧率", "�
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "缓动动画", "缓动动画\缓动动画.csproj", "{A2DAFC06-91B8-4F02-8709-02E43554EAE4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF简易计算器", "WPF简易计算器\WPF简易计算器.csproj", "{F72BF3EC-D156-48D7-A15C-8DD06E014378}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "融合集合图形", "融合集合图形\融合集合图形.csproj", "{8F46B75C-A070-461A-B824-AD1D2D985CBB}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "嵌套图形", "嵌套图形\嵌套图形.csproj", "{8758802A-DA9F-4209-8125-A1F96A34AA00}"
@@ -43,11 +41,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "基于帧的动画", "基�
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dispatcher(调度)类", "ListView显示数据\dispatcher(调度)类.csproj", "{7C0B6325-3C2D-430A-A8EE-459CB2EC2606}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BackgrounderWorker", "BackgrounderWorker\BackgrounderWorker.csproj", "{8B6614A7-B1DF-4082-83AC-688493734B32}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF实现渐变淡入淡出的动画效果", "WPF实现渐变淡入淡出的动画效果\WPF实现渐变淡入淡出的动画效果.csproj", "{B0061B32-85DE-434F-91AE-D803E27FB96C}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BombDropper", "BombDropper\BombDropper.csproj", "{08184FF5-2DE1-4B1A-9597-017ABD71B2DD}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "控制播放1", "控制播放1\控制播放1.csproj", "{67CB51A0-BE9D-4590-93B0-0FCA08FCD33C}"
 EndProject
@@ -63,21 +57,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfAnimationTest", "WpfAnim
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF路径动画(动态逆向动画)", "WPF路径动画(动态逆向动画)\WPF路径动画(动态逆向动画).csproj", "{300B42C8-F8ED-47A0-9B77-86790EA46E55}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF自定义TabControl样式", "WPF自定义TabControl样式\WPF自定义TabControl样式.csproj", "{492B954A-B75B-466F-B93D-C95AC9AEA2CC}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF绘图", "WPF绘图\WPF绘图.csproj", "{8C22C55E-4BAC-4805-9BDE-F9C5F9406B18}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "howto_xaml_cube_sides", "howto_xaml_cube_sides\howto_xaml_cube_sides.csproj", "{52F2BDB4-6C48-4C43-939E-55D7F5F95652}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "创建三维场景", "创建三维场景\创建三维场景.csproj", "{CC6A101F-739F-4C93-8B5B-090B60CE4FAE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "向三维模型应用绘图", "向三维模型应用绘图\向三维模型应用绘图.csproj", "{557A880D-7F1A-42D7-B931-247D9AD9BE2A}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "向三维对象的正面和背面应用 Material", "向三维对象的正面和背面应用 Material\向三维对象的正面和背面应用 Material.csproj", "{107B7DD5-F5ED-4884-8B8A-C93A3BCF6163}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "向三维对象应用放射材料", "向三维对象应用放射材料\向三维对象应用放射材料.csproj", "{7FAED683-B992-46E8-A5E5-E4DEEF5135A6}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "转换三维模型的比例", "转换三维模型的比例\转换三维模型的比例.csproj", "{BC4BFE5F-D65E-4D46-928A-4ABB3F46058B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "向三维模型应用多个转换", "向三维模型应用多个转换\向三维模型应用多个转换.csproj", "{0E6EDD50-09F8-4732-9683-4FA7AD2ED17D}"
 EndProject
@@ -125,10 +111,6 @@ Global
 		{A2DAFC06-91B8-4F02-8709-02E43554EAE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A2DAFC06-91B8-4F02-8709-02E43554EAE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A2DAFC06-91B8-4F02-8709-02E43554EAE4}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F72BF3EC-D156-48D7-A15C-8DD06E014378}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F72BF3EC-D156-48D7-A15C-8DD06E014378}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F72BF3EC-D156-48D7-A15C-8DD06E014378}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F72BF3EC-D156-48D7-A15C-8DD06E014378}.Release|Any CPU.Build.0 = Release|Any CPU
 		{8F46B75C-A070-461A-B824-AD1D2D985CBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{8F46B75C-A070-461A-B824-AD1D2D985CBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8F46B75C-A070-461A-B824-AD1D2D985CBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -185,18 +167,10 @@ Global
 		{7C0B6325-3C2D-430A-A8EE-459CB2EC2606}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7C0B6325-3C2D-430A-A8EE-459CB2EC2606}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7C0B6325-3C2D-430A-A8EE-459CB2EC2606}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8B6614A7-B1DF-4082-83AC-688493734B32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8B6614A7-B1DF-4082-83AC-688493734B32}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8B6614A7-B1DF-4082-83AC-688493734B32}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8B6614A7-B1DF-4082-83AC-688493734B32}.Release|Any CPU.Build.0 = Release|Any CPU
 		{B0061B32-85DE-434F-91AE-D803E27FB96C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{B0061B32-85DE-434F-91AE-D803E27FB96C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B0061B32-85DE-434F-91AE-D803E27FB96C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B0061B32-85DE-434F-91AE-D803E27FB96C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{08184FF5-2DE1-4B1A-9597-017ABD71B2DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{08184FF5-2DE1-4B1A-9597-017ABD71B2DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{08184FF5-2DE1-4B1A-9597-017ABD71B2DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{08184FF5-2DE1-4B1A-9597-017ABD71B2DD}.Release|Any CPU.Build.0 = Release|Any CPU
 		{67CB51A0-BE9D-4590-93B0-0FCA08FCD33C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{67CB51A0-BE9D-4590-93B0-0FCA08FCD33C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{67CB51A0-BE9D-4590-93B0-0FCA08FCD33C}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -225,10 +199,6 @@ Global
 		{300B42C8-F8ED-47A0-9B77-86790EA46E55}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{300B42C8-F8ED-47A0-9B77-86790EA46E55}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{300B42C8-F8ED-47A0-9B77-86790EA46E55}.Release|Any CPU.Build.0 = Release|Any CPU
-		{492B954A-B75B-466F-B93D-C95AC9AEA2CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{492B954A-B75B-466F-B93D-C95AC9AEA2CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{492B954A-B75B-466F-B93D-C95AC9AEA2CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{492B954A-B75B-466F-B93D-C95AC9AEA2CC}.Release|Any CPU.Build.0 = Release|Any CPU
 		{8C22C55E-4BAC-4805-9BDE-F9C5F9406B18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{8C22C55E-4BAC-4805-9BDE-F9C5F9406B18}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8C22C55E-4BAC-4805-9BDE-F9C5F9406B18}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -241,22 +211,10 @@ Global
 		{CC6A101F-739F-4C93-8B5B-090B60CE4FAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CC6A101F-739F-4C93-8B5B-090B60CE4FAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CC6A101F-739F-4C93-8B5B-090B60CE4FAE}.Release|Any CPU.Build.0 = Release|Any CPU
-		{557A880D-7F1A-42D7-B931-247D9AD9BE2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{557A880D-7F1A-42D7-B931-247D9AD9BE2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{557A880D-7F1A-42D7-B931-247D9AD9BE2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{557A880D-7F1A-42D7-B931-247D9AD9BE2A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{107B7DD5-F5ED-4884-8B8A-C93A3BCF6163}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{107B7DD5-F5ED-4884-8B8A-C93A3BCF6163}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{107B7DD5-F5ED-4884-8B8A-C93A3BCF6163}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{107B7DD5-F5ED-4884-8B8A-C93A3BCF6163}.Release|Any CPU.Build.0 = Release|Any CPU
 		{7FAED683-B992-46E8-A5E5-E4DEEF5135A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{7FAED683-B992-46E8-A5E5-E4DEEF5135A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7FAED683-B992-46E8-A5E5-E4DEEF5135A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7FAED683-B992-46E8-A5E5-E4DEEF5135A6}.Release|Any CPU.Build.0 = Release|Any CPU
-		{BC4BFE5F-D65E-4D46-928A-4ABB3F46058B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BC4BFE5F-D65E-4D46-928A-4ABB3F46058B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BC4BFE5F-D65E-4D46-928A-4ABB3F46058B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BC4BFE5F-D65E-4D46-928A-4ABB3F46058B}.Release|Any CPU.Build.0 = Release|Any CPU
 		{0E6EDD50-09F8-4732-9683-4FA7AD2ED17D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{0E6EDD50-09F8-4732-9683-4FA7AD2ED17D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0E6EDD50-09F8-4732-9683-4FA7AD2ED17D}.Release|Any CPU.ActiveCfg = Release|Any CPU
