@@ -1,0 +1,21 @@
+﻿<Window x:Class="常用画刷.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:常用画刷"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="382.134" Width="607.888">
+    <Grid Margin="0,0,105.2,66.8">
+        <Rectangle Margin="0,0,-103.6,-66">
+            <Rectangle.Fill>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                    <GradientStop Color="Yellow" Offset="0.0"/>
+                    <GradientStop Color="Red" Offset="0.25"/>
+                    <GradientStop Color="Blue" Offset="0.75"/>
+                    <GradientStop Color="LimeGreen" Offset="1.0"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+    </Grid>
+</Window>

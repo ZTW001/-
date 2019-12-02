@@ -1,0 +1,24 @@
+﻿<Window x:Class="径向渐变画刷.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:径向渐变画刷"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Ellipse Width="300" Height="300">
+            <Ellipse.Fill>
+                <!--创建一个RadialGradientBrush对象-->
+                <RadialGradientBrush>
+                    <!--设置颜色和坐标-->
+                    <GradientStop Color="Red" Offset="0"></GradientStop>
+                    <GradientStop Color="Yellow" Offset="0.25"></GradientStop>
+                    <GradientStop Color="Pink" Offset="0.5"></GradientStop>
+                    <GradientStop Color="Blue" Offset="0.75"></GradientStop>
+                    <GradientStop Color="Gainsboro" Offset="1"></GradientStop>
+                </RadialGradientBrush>
+            </Ellipse.Fill>
+        </Ellipse>
+    </Grid>
+</Window>

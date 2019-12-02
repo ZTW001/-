@@ -1,0 +1,35 @@
+﻿<Window x:Class="变换形状.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:变换形状"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="912.265" Width="986.09">
+    <Grid>
+        <StackPanel Margin="0,0,-112,0.4">
+
+            <Rectangle Stroke="Red" Fill="Red" Width="250" Height="300" Margin="434,0,433.6,0">
+                <!--通过RenderTransform属性-->
+                <Rectangle.RenderTransform>
+                    <!--通过旋转类RotateTransform,然后设置Angle属性设置旋转角度-->
+                    <RotateTransform Angle="30"/>
+                </Rectangle.RenderTransform>
+            </Rectangle>
+
+            <Button Width="250" Height="300" Content="Hello World!!!" FontSize="20">
+                <Button.LayoutTransform>
+                    <RotateTransform Angle="30"/>
+                </Button.LayoutTransform>
+            </Button>
+            <Button x:Name="btn1" Width="100" Height="50" Content="test">
+                <Button.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleX="2" ScaleY="2"/>
+                        <RotateTransform Angle="20"/>
+                    </TransformGroup>
+                </Button.RenderTransform>
+            </Button>
+        </StackPanel>
+    </Grid>
+</Window>

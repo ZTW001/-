@@ -1,0 +1,62 @@
+﻿<Window x:Class="控制播放.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:控制播放"
+        mc:Ignorable="d"
+        Title="MainWindow" WindowState="Maximized" Height="350" Width="525">
+    <Window.Triggers>
+        <!--开始事件-->
+        <EventTrigger RoutedEvent="Button.Click" SourceName="btn_start">
+            <BeginStoryboard Name="beginstoryboard1">
+                <Storyboard>
+                    <DoubleAnimation Storyboard.TargetName="img" Storyboard.TargetProperty="Opacity" From="1" To="0" Duration="0:0:6"></DoubleAnimation>
+                </Storyboard>
+            </BeginStoryboard>
+        </EventTrigger>
+
+        <!--停止动画-->
+        <EventTrigger RoutedEvent="Button.Click" SourceName="btn_pause">
+            <PauseStoryboard BeginStoryboardName="beginstoryboard1"></PauseStoryboard>
+        </EventTrigger>
+
+        <!--恢复动画-->
+        <EventTrigger RoutedEvent="Button.Click" SourceName="btn_resume">
+            <ResumeStoryboard BeginStoryboardName="beginstoryboard1"></ResumeStoryboard>
+        </EventTrigger>
+
+        <!--停止动画-->
+        <EventTrigger RoutedEvent="Button.Click" SourceName="btn_stop">
+            <StopStoryboard BeginStoryboardName="beginstoryboard1"></StopStoryboard>
+        </EventTrigger>
+
+        <!--移除动画-->
+        <EventTrigger RoutedEvent="Button.Click" SourceName="btn_remove">
+            <RemoveStoryboard BeginStoryboardName="beginstoryboard1"></RemoveStoryboard>
+        </EventTrigger>
+    </Window.Triggers>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="3*"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Image  Name="img" Source="1.jpg"></Image>
+
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Button Name="btn_start" Content="开始" Margin="10" FontSize="20" Grid.Column="0"></Button>
+            <Button Name="btn_pause" Content="暂停" Margin="10" FontSize="20" Grid.Column="1"></Button>
+            <Button Name="btn_resume" Content="恢复" Margin="10" FontSize="20" Grid.Column="2"></Button>
+            <Button Name="btn_stop" Content="停止" Margin="10" FontSize="20" Grid.Column="3"></Button>
+            <Button Name="btn_remove" Content="移除" Margin="10" FontSize="20" Grid.Column="4"></Button>
+        </Grid>
+    </Grid>
+</Window>

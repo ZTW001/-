@@ -1,0 +1,65 @@
+﻿<Window x:Class="关键帧动画1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:关键帧动画1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Canvas>
+            <Path Stroke="Red" StrokeThickness="1" Data="{StaticResource path}" Canvas.Top="10" Canvas.Left="10"></Path>
+            <!--<Ellipse  Name="image" Width="15" Height="15" Fill="Green"></Ellipse>-->
+
+            <Image Name="image">
+                <Image.Source>
+                    <DrawingImage>
+                        <DrawingImage.Drawing>
+                            <GeometryDrawing Brush="LightSkyBlue">
+                                <GeometryDrawing.Geometry>
+                                    <GeometryGroup>
+                                        <EllipseGeometry Center="10,10" RadiusX="9" RadiusY="4"></EllipseGeometry>
+                                        <EllipseGeometry Center="10,10" RadiusX="4" RadiusY="9"></EllipseGeometry>
+                                    </GeometryGroup>
+                                </GeometryDrawing.Geometry>
+                                <GeometryDrawing.Pen>
+                                    <Pen Thickness="1" Brush="Black"></Pen>
+                                </GeometryDrawing.Pen>
+                            </GeometryDrawing>
+                        </DrawingImage.Drawing>
+                    </DrawingImage>
+                </Image.Source>
+            </Image>
+        </Canvas>
+    </Grid>
+    <Window.Resources>
+        <PathGeometry x:Key="path">
+            <PathFigure IsClosed="True">
+                <ArcSegment Point="100,200" Size="15,10" SweepDirection="Clockwise"></ArcSegment>
+                <ArcSegment Point="400,50" Size="5,5"></ArcSegment>
+            </PathFigure>
+        </PathGeometry>
+    </Window.Resources>
+
+    <Window.Triggers>
+        <EventTrigger RoutedEvent="Window.Loaded">
+            <EventTrigger.Actions>
+                <BeginStoryboard>
+                    <Storyboard>
+                        <DoubleAnimationUsingPath Storyboard.TargetName="image" 
+                                              Storyboard.TargetProperty="(Canvas.Left)" 
+                                              PathGeometry="{StaticResource path}"
+                                              Duration="0:0:5" RepeatBehavior="Forever" Source="X">
+                        </DoubleAnimationUsingPath>
+
+                        <DoubleAnimationUsingPath Storyboard.TargetName="image"
+                                               Storyboard.TargetProperty="(Canvas.Top)" 
+                                              PathGeometry="{StaticResource path}"
+                                              Duration="0:0:5" RepeatBehavior="Forever" Source="Y">
+                        </DoubleAnimationUsingPath>
+                    </Storyboard>
+                </BeginStoryboard>
+            </EventTrigger.Actions>
+        </EventTrigger>
+    </Window.Triggers>
+</Window>

@@ -1,0 +1,54 @@
+﻿<Window x:Class="动态画刷.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:动态画刷"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Ellipse Name="ellipse1" Width="150" Height="150">
+            <Ellipse.Fill>
+                <RadialGradientBrush GradientOrigin="0.1,0.1">
+                    <RadialGradientBrush.GradientStops>
+                        <GradientStop Offset="0.3" Color="Red">
+                        </GradientStop>
+
+                        <GradientStop Offset="0.6" Color="Green">
+                        </GradientStop>
+
+                        <GradientStop Offset="0.9" Color="Yellow">
+                        </GradientStop>
+                    </RadialGradientBrush.GradientStops>
+                </RadialGradientBrush>
+            </Ellipse.Fill>
+        </Ellipse>
+    </Grid>
+    <Window.Triggers>
+        <EventTrigger RoutedEvent="Window.Loaded">
+            <EventTrigger.Actions>
+                <BeginStoryboard>
+                    <Storyboard>
+                        <!--设置Fill.GradientOrigin属性。-->
+                        <PointAnimation Storyboard.TargetName="ellipse1" 
+                                    Storyboard.TargetProperty="Fill.GradientOrigin" 
+                                    To="1,1" Duration="0:0:5" ></PointAnimation>
+
+                        <!--设置Fill.GradientStops属性。-->
+                        <ColorAnimation Storyboard.TargetName="ellipse1" 
+                                    Storyboard.TargetProperty="Fill.GradientStops[0].Color" 
+                                    To="Pink" Duration="0:0:5" ></ColorAnimation>
+
+                        <ColorAnimation Storyboard.TargetName="ellipse1" 
+                                    Storyboard.TargetProperty="Fill.GradientStops[1].Color" 
+                                    To="Gold" Duration="0:0:5" ></ColorAnimation>
+
+                        <ColorAnimation Storyboard.TargetName="ellipse1" 
+                                    Storyboard.TargetProperty="Fill.GradientStops[2].Color" 
+                                    To="Gray" Duration="0:0:5" ></ColorAnimation>
+                    </Storyboard>
+                </BeginStoryboard>
+            </EventTrigger.Actions>
+        </EventTrigger>
+    </Window.Triggers>
+</Window>

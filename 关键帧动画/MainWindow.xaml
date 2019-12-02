@@ -1,0 +1,49 @@
+﻿<Window x:Class="关键帧动画.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:关键帧动画"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Ellipse Width="200" Height="200" Name="ellipse1">
+            <Ellipse.Fill>
+                <RadialGradientBrush>
+                    <RadialGradientBrush.GradientStops>
+                        <GradientStop Offset="0.3" Color="Red">
+                        </GradientStop>
+
+                        <GradientStop Offset="0.6" Color="Yellow">
+                        </GradientStop>
+
+                        <GradientStop Offset="0.9" Color="Green">
+                        </GradientStop>
+                    </RadialGradientBrush.GradientStops>
+                </RadialGradientBrush>
+            </Ellipse.Fill>
+        </Ellipse>
+    </Grid>
+    <Window.Triggers>
+        <EventTrigger RoutedEvent="Window.Loaded">
+            <EventTrigger.Actions>
+                <BeginStoryboard>
+                    <Storyboard Storyboard.TargetName="ellipse1" Storyboard.TargetProperty="Fill.GradientOrigin">
+                        <!--PointAnimationUsingKeyFrames：使用线性插值-->
+                        <PointAnimationUsingKeyFrames>
+                            <!--LinearPointKeyFrame:关键帧对象-->
+                            <LinearPointKeyFrame Value="0.7,0.3" KeyTime="0:0:0">
+                            </LinearPointKeyFrame>
+
+                            <LinearPointKeyFrame Value="0.3,0.7" KeyTime="0:0:3">
+                            </LinearPointKeyFrame>
+
+                            <LinearPointKeyFrame Value="0.5,0.2" KeyTime="0:0:5">
+                            </LinearPointKeyFrame>
+                        </PointAnimationUsingKeyFrames>
+                    </Storyboard>
+                </BeginStoryboard>
+            </EventTrigger.Actions>
+        </EventTrigger>
+    </Window.Triggers>
+</Window>

@@ -1,0 +1,81 @@
+﻿<Window x:Class="GeometryCombineMode测试.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GeometryCombineMode测试"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="500" Width="400">
+    <Grid >
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <!--Union模式-->
+        <Path Stroke="Red" Fill="Red" Grid.Row="0">
+            <Path.Data>
+                <CombinedGeometry GeometryCombineMode="Union">
+                    <CombinedGeometry.Geometry1>
+                        <RectangleGeometry Rect="0,0,100,100"></RectangleGeometry>
+                    </CombinedGeometry.Geometry1>
+                    <CombinedGeometry.Geometry2>
+                        <EllipseGeometry Center="85,50" RadiusX="65" RadiusY="35"></EllipseGeometry>
+                    </CombinedGeometry.Geometry2>
+                </CombinedGeometry>
+            </Path.Data>
+        </Path>
+        <Label Grid.Column="1" FontSize="30" HorizontalAlignment="Center" VerticalAlignment="Center">Union模式</Label>
+
+        <!--Intersect模式-->
+        <Path Stroke="Red" Fill="Red" Grid.Row="1">
+            <Path.Data>
+                <CombinedGeometry GeometryCombineMode="Intersect">
+                    <CombinedGeometry.Geometry1>
+                        <RectangleGeometry Rect="0,0,100,100"></RectangleGeometry>
+                    </CombinedGeometry.Geometry1>
+                    <CombinedGeometry.Geometry2>
+                        <EllipseGeometry Center="85,50" RadiusX="65" RadiusY="35"></EllipseGeometry>
+                    </CombinedGeometry.Geometry2>
+                </CombinedGeometry>
+            </Path.Data>
+        </Path>
+        <Label  Grid.Row="1" Grid.Column="1" FontSize="30" HorizontalAlignment="Center" VerticalAlignment="Center">Intersect模式</Label>
+
+        <!--Xor模式-->
+        <Path Stroke="Red" Fill="Red" Grid.Row="2">
+            <Path.Data>
+                <CombinedGeometry GeometryCombineMode="Xor">
+                    <CombinedGeometry.Geometry1>
+                        <RectangleGeometry Rect="0,0,100,100"></RectangleGeometry>
+                    </CombinedGeometry.Geometry1>
+                    <CombinedGeometry.Geometry2>
+                        <EllipseGeometry Center="85,50" RadiusX="65" RadiusY="35"></EllipseGeometry>
+                    </CombinedGeometry.Geometry2>
+                </CombinedGeometry>
+            </Path.Data>
+        </Path>
+        <Label  Grid.Row="2" Grid.Column="1" FontSize="30" HorizontalAlignment="Center" VerticalAlignment="Center">Xor模式</Label>
+
+        <!--Exclude模式-->
+        <Path Stroke="Red" Fill="Red" Grid.Row="3">
+            <Path.Data>
+                <CombinedGeometry GeometryCombineMode="Exclude">
+                    <CombinedGeometry.Geometry1>
+                        <RectangleGeometry Rect="0,0,100,100"></RectangleGeometry>
+                    </CombinedGeometry.Geometry1>
+                    <CombinedGeometry.Geometry2>
+                        <EllipseGeometry Center="85,50" RadiusX="65" RadiusY="35"></EllipseGeometry>
+                    </CombinedGeometry.Geometry2>
+                </CombinedGeometry>
+            </Path.Data>
+        </Path>
+        <Label Grid.Row="3" Grid.Column="1" FontSize="30" HorizontalAlignment="Center" VerticalAlignment="Center">Exclude模式</Label>
+    </Grid>
+</Window>

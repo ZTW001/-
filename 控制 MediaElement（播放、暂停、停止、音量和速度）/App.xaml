@@ -1,0 +1,9 @@
+﻿<Application x:Class="控制_MediaElement_播放_暂停_停止_音量和速度_.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:控制_MediaElement_播放_暂停_停止_音量和速度_"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+         
+    </Application.Resources>
+</Application>

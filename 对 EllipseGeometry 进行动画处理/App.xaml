@@ -1,0 +1,9 @@
+﻿<Application x:Class="对_EllipseGeometry_进行动画处理.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:对_EllipseGeometry_进行动画处理"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+         
+    </Application.Resources>
+</Application>

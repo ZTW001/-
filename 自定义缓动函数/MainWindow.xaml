@@ -1,0 +1,30 @@
+﻿<Window x:Class="自定义缓动函数.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:自定义缓动函数"
+        Title="MainWindow" WindowStartupLocation ="CenterScreen"  Height="350" Width="525">
+
+    <Window.Triggers>
+        <!--事件触发器，窗体加载的Loaded事件。-->
+        <EventTrigger RoutedEvent="Window.Loaded">
+            <EventTrigger.Actions>
+                <BeginStoryboard>
+                    <Storyboard>
+                        <DoubleAnimation Storyboard.TargetName="ellipse1" Storyboard.TargetProperty="(Canvas.Left)" From="0" To="480" Duration="0:0:5"></DoubleAnimation>
+                        <DoubleAnimation Storyboard.TargetName="ellipse2" Storyboard.TargetProperty="(Canvas.Left)" From="0" To="480" Duration="0:0:5">
+                            <DoubleAnimation.EasingFunction>
+                                <!--调用自定义缓动函数类-->
+                                <local:RandomJitterEase EasingMode="EaseIn" Jitter="1500"></local:RandomJitterEase>
+                            </DoubleAnimation.EasingFunction>
+                        </DoubleAnimation>
+                    </Storyboard>
+                </BeginStoryboard>
+            </EventTrigger.Actions>
+        </EventTrigger>
+    </Window.Triggers>
+
+    <Canvas ClipToBounds="True">
+        <Ellipse Name="ellipse1" Width="25" Height="25" Fill="Red"></Ellipse>
+        <Ellipse Margin="0,70,0,0" Name="ellipse2" Width="25" Height="25" Fill="Green"></Ellipse>
+    </Canvas>
+</Window>
