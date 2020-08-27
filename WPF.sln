@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.902
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30413.136
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "模拟三维", "模拟三维\模拟三维.csproj", "{3A5D9731-DC85-468D-B767-7BCE7D5F7A15}"
 EndProject
@@ -109,8 +109,6 @@ Project("{911E67C6-3D85-4FCE-B560-20A9C3E3FF48}") = "RomeClock", "C:\Users\admin
 		LaunchSQLEngine = No
 		AttachLaunchAction = No
 	EndProjectSection
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RomeClockControlLibrary", "C:\Users\admin\Desktop\RomeClock\RomeClockControlLibrary\RomeClockControlLibrary.csproj", "{CD3AF8E4-2B31-4F10-B2FC-2C1CA295D30C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpenseIt", "ExpenseIt\ExpenseIt.csproj", "{8E74345A-3785-4D11-9EE0-FA248C9C749F}"
 EndProject
@@ -316,10 +314,6 @@ Global
 		{32A327F0-40ED-4699-A86D-2B63C7250F71}.Release|Any CPU.Build.0 = Release|Any CPU
 		{6D34919A-00CF-43AF-B119-136026B1E287}.Debug|Any CPU.ActiveCfg = Release|Any CPU
 		{6D34919A-00CF-43AF-B119-136026B1E287}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CD3AF8E4-2B31-4F10-B2FC-2C1CA295D30C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CD3AF8E4-2B31-4F10-B2FC-2C1CA295D30C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CD3AF8E4-2B31-4F10-B2FC-2C1CA295D30C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CD3AF8E4-2B31-4F10-B2FC-2C1CA295D30C}.Release|Any CPU.Build.0 = Release|Any CPU
 		{8E74345A-3785-4D11-9EE0-FA248C9C749F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{8E74345A-3785-4D11-9EE0-FA248C9C749F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8E74345A-3785-4D11-9EE0-FA248C9C749F}.Release|Any CPU.ActiveCfg = Release|Any CPU
