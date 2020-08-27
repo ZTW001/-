@@ -1,0 +1,53 @@
+﻿<Window x:Class="wpf利用动画实现图形变化产生3d效果.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:wpf利用动画实现图形变化产生3d效果"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TextBlock Text="加油，奥利给！" FontSize="44pt" FontFamily="Arial Black" RenderTransformOrigin="0.5,0.5">
+            <TextBlock.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform x:Name="xformScale"/>
+                    <ScaleTransform x:Name="xformScale2"/>
+                    <RotateTransform x:Name="xformRotate"/>
+                    <SkewTransform x:Name="xformSkew"/>
+                    <SkewTransform x:Name="xformSkew2"/>
+                    <TranslateTransform x:Name="xformTrans"/>
+                    <TranslateTransform x:Name="xformTrans2"/>
+                </TransformGroup>
+            </TextBlock.RenderTransform>
+            <TextBlock.Triggers>
+                <EventTrigger RoutedEvent="TextBlock.Loaded">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <!--沿x轴变成0宽度-->
+                            <!--<DoubleAnimation Storyboard.TargetName="xformScale" Storyboard.TargetProperty="ScaleX"
+                                             From="1" To="0" Duration="0:0:5" AutoReverse="True" RepeatBehavior="Forever"/>-->
+                            <!--沿Y轴变成0宽度-->
+                            <!--<DoubleAnimation Storyboard.TargetName="xformScale2" Storyboard.TargetProperty="ScaleY"
+                                             From="1" To="0" Duration="0:0:5" AutoReverse="True" RepeatBehavior="Forever"/>-->
+                            <!--360度旋转-->
+                            <!--<DoubleAnimation Storyboard.TargetName="xformRotate" Storyboard.TargetProperty="Angle"
+                                             From="0" To="360" Duration="0:0:5" RepeatBehavior="Forever"/>-->
+                            <!--向无穷远处消失成一条y轴-->
+                            <!--<DoubleAnimation Storyboard.TargetName="xformSkew" Storyboard.TargetProperty="AngleY"
+                                             From="0" To="90" Duration="0:0:5" RepeatBehavior="Forever"/>-->
+                            <!--向无穷远处消失成一条x轴-->
+                            <!--<DoubleAnimation Storyboard.TargetName="xformSkew2" Storyboard.TargetProperty="AngleX"
+                                             From="0" To="90" Duration="0:0:5" RepeatBehavior="Forever"/>-->
+                            <!--沿x轴平移-->
+                            <DoubleAnimation Storyboard.TargetName="xformTrans" Storyboard.TargetProperty="X"
+                                             From="0" To="200" Duration="0:0:5" RepeatBehavior="Forever"/>
+                            <!--沿y轴平移-->
+                            <DoubleAnimation Storyboard.TargetName="xformTrans2" Storyboard.TargetProperty="Y"
+                                             From="0" To="200" Duration="0:0:5" RepeatBehavior="Forever"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </TextBlock.Triggers>
+        </TextBlock>
+    </Grid>
+</Window>

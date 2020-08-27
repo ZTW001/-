@@ -1,0 +1,16 @@
+﻿<!--" Code highlighting produced by Actipro CodeHighlighter (freeware)http://www.CodeHighlighter.com/-->
+<UserControl x:Class="ImageRotate.RotateItem"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+    Width="320" Height="240">
+    <Canvas x:Name="ItemCanvas" Width="320" Height="240" Canvas.Left="77" Canvas.Top="57" Background="#FFFFFFFF" 
+    RenderTransformOrigin="0.5,0.5">
+        <Canvas.RenderTransform>
+            <TransformGroup>
+                <RotateTransform x:Name="RotateItemCanvas" Angle="0"/>
+            </TransformGroup>
+        </Canvas.RenderTransform>
+        <Image x:Name="Image" Width="300" Height="220" Canvas.Left="10" Canvas.Top="10" Source="" Stretch="Fill"/>
+        <Ellipse x:Name="Handle" Width="15" Height="15" Fill="#FFEAFF00" Stroke="#FF000000" Canvas.Left="313" Canvas.Top="233"/>
+    </Canvas>
+</UserControl>

@@ -1,0 +1,28 @@
+﻿<Window x:Class="MoonSnake.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MoonSnake"
+        mc:Ignorable="d"
+        PreviewKeyDown="MyCanvas_PreviewKeyDown"
+        Title="Moon Snake Game" Height="540" Width="660" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize">
+    <DockPanel>
+        <Menu DockPanel.Dock="Top">
+            <MenuItem Header="文件">
+                <MenuItem Name="MenuFile_NewGame" Header="新游戏" Click="MenuFile_NewGame_Click" />
+                <Separator/>
+                <MenuItem Name="MenuFile_Exit" Header="退出" Click="MenuFile_Exit_Click" />
+            </MenuItem>
+            <MenuItem Header="控制">
+                <MenuItem Name="MenuControl_Pause" Header="暂停" Click="MenuControl_Pause_Click" />
+            </MenuItem>
+            <MenuItem Header="帮助">
+                <MenuItem Name="MenuHelp_About" Header="关于..." Click="MenuHelp_About_Click" />
+            </MenuItem>
+        </Menu>
+        <Canvas x:Name="myCanvas" Height="480" Width="640" Background="#222222" Focusable="True"
+                    PreviewKeyDown="MyCanvas_PreviewKeyDown" />
+
+    </DockPanel>
+</Window>

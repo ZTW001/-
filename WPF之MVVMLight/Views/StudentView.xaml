@@ -1,0 +1,15 @@
+﻿<Window x:Class="WPF之MVVMLight.Views.StudentView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF之MVVMLight.Views"
+        mc:Ignorable="d"
+        Title="StudentView" Height="450" Width="800"
+        DataContext="{Binding Source = {StaticResource Locator}, Path= Student}">
+    <Grid>
+        <Label Content="{Binding StudentModel.Id}" HorizontalAlignment="Left" Margin="91,160,0,0" VerticalAlignment="Top"/>
+        <Label Content="{Binding StudentModel.Name}" HorizontalAlignment="Left" Margin="106,237,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>

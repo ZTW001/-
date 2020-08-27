@@ -1,0 +1,14 @@
+﻿<Window x:Class="_3Dshow.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Demo" Height="441" Width="702" Background="LightGray"
+        xmlns:System="clr-namespace:System;assembly=mscorlib">
+
+    <Grid  PreviewMouseDown="_view_mousedown" PreviewMouseMove="_view_mousemove" PreviewMouseUp="_view_mouseup" >
+        <Border Background="LightGray" Padding="2" Margin="0,-41,0,-40">
+            <Viewport3D x:Name="_view" >
+            </Viewport3D>
+        </Border>
+    </Grid>
+</Window>
+
